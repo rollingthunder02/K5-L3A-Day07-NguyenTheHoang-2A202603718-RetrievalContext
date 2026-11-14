@@ -1,0 +1,61 @@
+{
+  "cases": 21,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 21,
+    "N": 21
+  },
+  "grounded_answer": {
+    "0": 12,
+    "1": 2,
+    "2": 5,
+    "N": 19,
+    "mean": 0.631578947368421
+  },
+  "citation_validity": {
+    "n": 7,
+    "N": 9
+  },
+  "answer_citation_coverage": {
+    "n": 8,
+    "N": 8
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 11,
+    "N": 19
+  },
+  "hit1": {
+    "n": 9,
+    "N": 19
+  },
+  "hit3": {
+    "n": 14,
+    "N": 19
+  },
+  "context_evidence": {
+    "n": 7,
+    "N": 19
+  },
+  "pipeline_hit3": {
+    "n": 7,
+    "N": 19
+  },
+  "search_counts": {
+    "3": 13,
+    "1": 7,
+    "2": 1
+  },
+  "median_ms": 5832,
+  "median_ranking_ms": 446,
+  "median_agent_ms": 5377,
+  "chat_tokens": {
+    "input": 36558,
+    "cached_input": 0,
+    "output": 1821
+  },
+  "estimated_chat_usd": 0.006576
+}

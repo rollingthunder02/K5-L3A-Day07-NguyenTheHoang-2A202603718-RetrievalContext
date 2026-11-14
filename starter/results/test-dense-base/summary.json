@@ -1,0 +1,53 @@
+{
+  "cases": 7,
+  "provider_errors": 0,
+  "tool_use": {
+    "n": 7,
+    "N": 7
+  },
+  "grounded_answer": {
+    "0": 4,
+    "1": 0,
+    "2": 1,
+    "N": 5,
+    "mean": 0.4
+  },
+  "citation_validity": {
+    "n": 1,
+    "N": 2
+  },
+  "answer_citation_coverage": {
+    "n": 2,
+    "N": 2
+  },
+  "abstention": {
+    "n": 2,
+    "N": 2
+  },
+  "false_abstention": {
+    "n": 3,
+    "N": 5
+  },
+  "hit1": {
+    "n": 2,
+    "N": 5
+  },
+  "hit3": {
+    "n": 3,
+    "N": 5
+  },
+  "context_hit": {
+    "n": 1,
+    "N": 5
+  },
+  "context_grades": {
+    "0": 4,
+    "1": 0,
+    "2": 1
+  },
+  "median_ms": 3643,
+  "search_counts": {
+    "1": 7
+  },
+  "estimated_chat_usd": 0.001052
+}

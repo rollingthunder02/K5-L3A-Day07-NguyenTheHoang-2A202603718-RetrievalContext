@@ -1,0 +1,1234 @@
+[
+  {
+    "query_id": "T01",
+    "split": "test",
+    "question": "Sinh viên học lại một học phần đã đạt để cải thiện CPA. Nếu điểm lần học lại thấp hơn điểm cũ, HUST công nhận điểm nào là điểm chính thức?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Sinh viên học lại một học phần đã đạt để cải thiện CPA điểm thấp hơn điểm cũ HUST công nhận điểm nào",
+        "filter": null,
+        "results": [
+          {
+            "id": "hust-academic-regulations-2025:15:1139",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 15,
+            "text": "c) Cumulative grade point average (CPA).\n",
+            "metadata": {
+              "start": 1139,
+              "program_level": "undergraduate"
+            },
+            "score": 0.03125763125763126,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 5,
+              "tfidf": 3
+            }
+          },
+          {
+            "id": "hust-academic-regulations-2025:16:2408",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 16,
+            "text": "c) Have achieved a CPA (based on courses registered for graduation) of 2.0 or higher.\n",
+            "metadata": {
+              "start": 2408,
+              "program_level": "undergraduate"
+            },
+            "score": 0.030679156908665108,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1,
+              "tfidf": 10
+            }
+          },
+          {
+            "id": "hust-academic-regulations-2025:22:4",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 22,
+            "text": "c) Have a CPA of 2.0 or higher;\n",
+            "metadata": {
+              "start": 4,
+              "program_level": "engineer"
+            },
+            "score": 0.030621785881252923,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 9,
+              "tfidf": 2
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:15:1139 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 15]\nc) Cumulative grade point average (CPA).\n\n\n[hust-academic-regulations-2025:16:2408 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 16]\nc) Have achieved a CPA (based on courses registered for graduation) of 2.0 or higher.\n\n\n[hust-academic-regulations-2025:22:4 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 22]\nc) Have a CPA of 2.0 or higher;\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:15:1139",
+          "hust-academic-regulations-2025:16:2408",
+          "hust-academic-regulations-2025:22:4"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations",
+        "proposed_answer": "Nội dung không đủ bằng chứng để trả lời câu hỏi về việc HUST công nhận điểm nào nếu điểm lần học lại thấp hơn điểm cũ.",
+        "proposed_citations": []
+      }
+    ],
+    "citations": [],
+    "query_top3": [
+      {
+        "id": "hust-academic-regulations-2025:15:1139",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 15,
+        "text": "c) Cumulative grade point average (CPA).\n",
+        "metadata": {
+          "start": 1139,
+          "program_level": "undergraduate"
+        },
+        "score": 0.031746031746031744,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 3,
+          "tfidf": 3
+        }
+      },
+      {
+        "id": "hust-academic-regulations-2025:16:2408",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 16,
+        "text": "c) Have achieved a CPA (based on courses registered for graduation) of 2.0 or higher.\n",
+        "metadata": {
+          "start": 2408,
+          "program_level": "undergraduate"
+        },
+        "score": 0.0304147465437788,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "tfidf": 10
+        }
+      },
+      {
+        "id": "hust-academic-regulations-2025:22:755",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 22,
+        "text": "2. The graduation classification is based on the CPA as defined in Clause 6, Article 12 of these\nRegulations. However, in the following cases, the graduation classification of students with a CPA at\nthe Good level or higher will be lowered by one level:\n",
+        "metadata": {
+          "start": 755,
+          "program_level": "engineer"
+        },
+        "score": 0.029857397504456328,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 6,
+          "tfidf": 8
+        }
+      }
+    ],
+    "ranking_ms": 499.1775999988022,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "agent_ms": 3021.969600002194,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "chat_usage": [
+      {
+        "prompt_tokens": 316,
+        "completion_tokens": 29,
+        "total_tokens": 345,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 521,
+        "completion_tokens": 38,
+        "total_tokens": 559,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3521.18419999897,
+    "config": "hybrid-budget"
+  },
+  {
+    "query_id": "T02",
+    "split": "test",
+    "question": "Người học được hoãn thi cuối kỳ vì lý do chính đáng phải thi bù trong thời hạn nào? Nếu quá thời hạn đó thì học phần được chấm thế nào?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "hoãn thi cuối kỳ lý do chính đáng thi bù thời hạn",
+        "filter": null,
+        "results": [
+          {
+            "chunk_id": "hust-academic-regulations-2025:20:1772",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 20,
+            "text": "b) A student exceeds the maximum study duration or is no longer able to meet graduation\nrequirements within the permitted timeframe as specified in Clause 3, Article 3 of this document.\n",
+            "metadata": {
+              "start": 1772,
+              "program_level": "undergraduate"
+            },
+            "score": 0.01639344262295082,
+            "id": "hust-academic-regulations-2025:20:1772",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "id": "hust-academic-regulations-2025:24:2173",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 24,
+            "text": "d) Transfer courses do not count toward the calculation of the CPA.",
+            "metadata": {
+              "start": 2173,
+              "program_level": "masters"
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "tfidf": 1
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:23:1272",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 23,
+            "text": "a) The student exceed the maximum study duration or is no longer able to meet graduation\nrequirements within the designated time as stipulated in Point a, Clause 3, Article 3 of these\nRegulations.\n",
+            "metadata": {
+              "start": 1272,
+              "program_level": "engineer"
+            },
+            "score": 0.016129032258064516,
+            "id": "hust-academic-regulations-2025:23:1272",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 2
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:20:1772 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 20]\nb) A student exceeds the maximum study duration or is no longer able to meet graduation\nrequirements within the permitted timeframe as specified in Clause 3, Article 3 of this document.\n\n\n[hust-academic-regulations-2025:24:2173 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 24]\nd) Transfer courses do not count toward the calculation of the CPA.\n\n[hust-academic-regulations-2025:23:1272 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 23]\na) The student exceed the maximum study duration or is no longer able to meet graduation\nrequirements within the designated time as stipulated in Point a, Clause 3, Article 3 of these\nRegulations.\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:20:1772",
+          "hust-academic-regulations-2025:24:2173",
+          "hust-academic-regulations-2025:23:1272"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations",
+        "proposed_answer": "Không đủ bằng chứng",
+        "proposed_citations": []
+      }
+    ],
+    "citations": [],
+    "query_top3": [
+      {
+        "id": "hust-academic-regulations-2025:27:1187",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 27,
+        "text": "4. Within 5 years from the end date of the course, students who do not graduate have the right\nto request a certificate for the academic credits they have accumulated in the study period.\n",
+        "metadata": {
+          "start": 1187,
+          "program_level": "masters"
+        },
+        "score": 0.029910714285714284,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 10,
+          "tfidf": 4
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:20:1772",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 20,
+        "text": "b) A student exceeds the maximum study duration or is no longer able to meet graduation\nrequirements within the permitted timeframe as specified in Clause 3, Article 3 of this document.\n",
+        "metadata": {
+          "start": 1772,
+          "program_level": "undergraduate"
+        },
+        "score": 0.01639344262295082,
+        "id": "hust-academic-regulations-2025:20:1772",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 1
+        }
+      },
+      {
+        "id": "hust-academic-regulations-2025:24:2173",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 24,
+        "text": "d) Transfer courses do not count toward the calculation of the CPA.",
+        "metadata": {
+          "start": 2173,
+          "program_level": "masters"
+        },
+        "score": 0.01639344262295082,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "tfidf": 1
+        }
+      }
+    ],
+    "ranking_ms": 956.872899998416,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "agent_ms": 2753.791300001467,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "chat_usage": [
+      {
+        "prompt_tokens": 317,
+        "completion_tokens": 18,
+        "total_tokens": 335,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 560,
+        "completion_tokens": 12,
+        "total_tokens": 572,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3710.7011999978567,
+    "config": "hybrid-budget"
+  },
+  {
+    "query_id": "T03",
+    "split": "test",
+    "question": "Người học có bao nhiêu ngày để đề nghị phúc khảo hoặc khiếu nại điểm kể từ khi điểm được cập nhật? Quy định này loại trừ những hình thức đánh giá nào?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Người học đề nghị phúc khảo khiếu nại điểm thời gian",
+        "filter": null,
+        "results": [
+          {
+            "chunk_id": "hust-academic-regulations-2025:23:1272",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 23,
+            "text": "a) The student exceed the maximum study duration or is no longer able to meet graduation\nrequirements within the designated time as stipulated in Point a, Clause 3, Article 3 of these\nRegulations.\n",
+            "metadata": {
+              "start": 1272,
+              "program_level": "engineer"
+            },
+            "score": 0.01639344262295082,
+            "id": "hust-academic-regulations-2025:23:1272",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:19:4",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 19,
+            "text": "These cases will be considered if the student’s remaining time is still within the eligible time\nframe for part-time study. This clause does not apply to students who voluntarily withdrew.\n",
+            "metadata": {
+              "start": 4,
+              "program_level": "undergraduate"
+            },
+            "score": 0.016129032258064516,
+            "id": "hust-academic-regulations-2025:19:4",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 2
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:28:636",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 28,
+            "text": "a) The student exceeds the maximum study duration or is no longer able to meet graduation\nrequirements within the permitted timeframe as specified in Clause 3, Article 3 of this document.\n",
+            "metadata": {
+              "start": 636,
+              "program_level": "masters"
+            },
+            "score": 0.015873015873015872,
+            "id": "hust-academic-regulations-2025:28:636",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 3
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:23:1272 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 23]\na) The student exceed the maximum study duration or is no longer able to meet graduation\nrequirements within the designated time as stipulated in Point a, Clause 3, Article 3 of these\nRegulations.\n\n\n[hust-academic-regulations-2025:19:4 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 19]\nThese cases will be considered if the student’s remaining time is still within the eligible time\nframe for part-time study. This clause does not apply to students who voluntarily withdrew.\n\n\n[hust-academic-regulations-2025:28:636 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 28]\na) The student exceeds the maximum study duration or is no longer able to meet graduation\nrequirements within the permitted timeframe as specified in Clause 3, Article 3 of this document.\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:23:1272",
+          "hust-academic-regulations-2025:19:4",
+          "hust-academic-regulations-2025:28:636"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations",
+        "proposed_answer": "Không đủ bằng chứng",
+        "proposed_citations": []
+      }
+    ],
+    "citations": [],
+    "query_top3": [
+      {
+        "chunk_id": "hust-academic-regulations-2025:15:4",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 15,
+        "text": "Article 12. Student feedback and evaluation on academic performance\n",
+        "metadata": {
+          "start": 4,
+          "program_level": "undergraduate"
+        },
+        "score": 0.01639344262295082,
+        "id": "hust-academic-regulations-2025:15:4",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 1
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:10:1972",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 10,
+        "text": "4. Learners may request a grade reappraisal or appeal within 7 days from the date the course\ngrade is updated in their academic accounts. Grade reappraisals or appeals do not apply to courses\nassessed through oral exams or by evaluation committees.\n",
+        "metadata": {
+          "start": 1972
+        },
+        "score": 0.016129032258064516,
+        "id": "hust-academic-regulations-2025:10:1972",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 2
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:27:279",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 27,
+        "text": "c) The final version of the thesis has been submitted to the Ta Quang Buu Library in accordance\nwith HUST’s formatting requirements, within 20 days from the date of a successful defense.\n",
+        "metadata": {
+          "start": 279,
+          "program_level": "masters"
+        },
+        "score": 0.015873015873015872,
+        "id": "hust-academic-regulations-2025:27:279",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 3
+        }
+      }
+    ],
+    "ranking_ms": 440.9226999996463,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "agent_ms": 3330.6983999973454,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": false,
+    "chat_usage": [
+      {
+        "prompt_tokens": 321,
+        "completion_tokens": 19,
+        "total_tokens": 340,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 584,
+        "completion_tokens": 15,
+        "total_tokens": 599,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3771.65800000148,
+    "config": "hybrid-budget"
+  },
+  {
+    "query_id": "T06",
+    "split": "test",
+    "question": "Một chuyên đề tiến sĩ được đánh giá đạt khi điểm trung bình do tiểu ban chấm đạt mức nào?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "đánh giá chuyên đề tiến sĩ điểm trung bình tiểu ban chấm",
+        "filter": null,
+        "results": [
+          {
+            "chunk_id": "hust-academic-regulations-2025:16:582",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 16,
+            "text": "b) The scores given by the supervisor, the reviewer, and the evaluation committee members may\nbe marked to the increments of 0.5 points.\n",
+            "metadata": {
+              "start": 582,
+              "program_level": "undergraduate"
+            },
+            "score": 0.01639344262295082,
+            "id": "hust-academic-regulations-2025:16:582",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:31:1315",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 31,
+            "text": " dissertation which are\npublished in the scientific journals required by the State Council for Professorship with at least 0.75\npoints under the same scoring framework for each;\n",
+            "metadata": {
+              "start": 1315
+            },
+            "score": 0.016129032258064516,
+            "id": "hust-academic-regulations-2025:31:1315",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 2
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:30:2062",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 30,
+            "text": "c) The doctoral thematic studies are evaluated in the form of a scientific presentation with an\nevaluation subcommittee. A topic is considered \"pass\" if the average score given by the subcommittee\nis 5.5 or higher on a 10-point scale.\n",
+            "metadata": {
+              "start": 2062
+            },
+            "score": 0.015873015873015872,
+            "id": "hust-academic-regulations-2025:30:2062",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 3
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:16:582 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 16]\nb) The scores given by the supervisor, the reviewer, and the evaluation committee members may\nbe marked to the increments of 0.5 points.\n\n\n[hust-academic-regulations-2025:31:1315 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 31]\n dissertation which are\npublished in the scientific journals required by the State Council for Professorship with at least 0.75\npoints under the same scoring framework for each;\n\n\n[hust-academic-regulations-2025:30:2062 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 30]\nc) The doctoral thematic studies are evaluated in the form of a scientific presentation with an\nevaluation subcommittee. A topic is considered \"pass\" if the average score given by the subcommittee\nis 5.5 or higher on a 10-point scale.\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:16:582",
+          "hust-academic-regulations-2025:31:1315",
+          "hust-academic-regulations-2025:30:2062"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "hust-academic-regulations-2025:30:2062"
+    ],
+    "query_top3": [
+      {
+        "id": "hust-academic-regulations-2025:24:2173",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 24,
+        "text": "d) Transfer courses do not count toward the calculation of the CPA.",
+        "metadata": {
+          "start": 2173,
+          "program_level": "masters"
+        },
+        "score": 0.01639344262295082,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "tfidf": 1
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:30:2062",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 30,
+        "text": "c) The doctoral thematic studies are evaluated in the form of a scientific presentation with an\nevaluation subcommittee. A topic is considered \"pass\" if the average score given by the subcommittee\nis 5.5 or higher on a 10-point scale.\n",
+        "metadata": {
+          "start": 2062
+        },
+        "score": 0.01639344262295082,
+        "id": "hust-academic-regulations-2025:30:2062",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 1
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:26:1669",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 26,
+        "text": "2. The thesis evaluation committee may grade 8.5 or higher for the thesis defense only if the\nstudent has a scientific publication related to the thesis content.\n",
+        "metadata": {
+          "start": 1669,
+          "program_level": "masters"
+        },
+        "score": 0.016129032258064516,
+        "id": "hust-academic-regulations-2025:26:1669",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 2
+        }
+      }
+    ],
+    "ranking_ms": 420.41750000134925,
+    "status": "answered",
+    "answer": "Một chuyên đề tiến sĩ được đánh giá đạt nếu điểm trung bình do tiểu ban chấm đạt mức 5.5 hoặc cao hơn trên thang điểm 10. [hust-academic-regulations-2025:30:2062]",
+    "agent_ms": 3446.827100000519,
+    "hit1": false,
+    "hit3": true,
+    "context_hit": true,
+    "chat_usage": [
+      {
+        "prompt_tokens": 303,
+        "completion_tokens": 19,
+        "total_tokens": 322,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 573,
+        "completion_tokens": 57,
+        "total_tokens": 630,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3867.276299999503,
+    "config": "hybrid-budget"
+  },
+  {
+    "query_id": "T07",
+    "split": "test",
+    "question": "Cần ít nhất bao nhiêu thành viên hội đồng đánh giá luận án tiến sĩ cấp cơ sở tán thành để luận án được đề xuất đánh giá cấp trường?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "số thành viên hội đồng đánh giá luận án tiến sĩ cấp cơ sở tán thành để luận án được đề xuất đánh giá cấp trường",
+        "filter": null,
+        "results": [
+          {
+            "chunk_id": "hust-academic-regulations-2025:19:714",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 19,
+            "text": "7. For exceptions, the President of HUST will set up a Committee to assess and reach a final\ndecision.\n",
+            "metadata": {
+              "start": 714,
+              "program_level": "undergraduate"
+            },
+            "score": 0.01639344262295082,
+            "id": "hust-academic-regulations-2025:19:714",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:32:531",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 32,
+            "text": "b) The Institutional Dissertation Evaluation Committee (hereinafter referred to as the\n“institutional committee”) is established by decision of the rector/faculty dean/institute director under\nauthorization of the President of HUST. The committee consists of 7 members, including a\nchairperson, a secretary, 2 reviewers, and other members. The dissertation defense at the institutional\nlevel must take place no sooner than 21 days and no later than 45 days from the date the committee is\nofficially",
+            "metadata": {
+              "start": 531
+            },
+            "score": 0.016129032258064516,
+            "id": "hust-academic-regulations-2025:32:531",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 2
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:26:772",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 26,
+            "text": "a) The thesis defense grade is the average grade given by all council members in the defense\nsession. The final grade is rounded to two decimal places, and each member grades on a 10 -point\nscale, allowing increments of 0.5 points.\n",
+            "metadata": {
+              "start": 772,
+              "program_level": "masters"
+            },
+            "score": 0.015873015873015872,
+            "id": "hust-academic-regulations-2025:26:772",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 3
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:19:714 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 19]\n7. For exceptions, the President of HUST will set up a Committee to assess and reach a final\ndecision.\n\n\n[hust-academic-regulations-2025:32:531 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 32]\nb) The Institutional Dissertation Evaluation Committee (hereinafter referred to as the\n“institutional committee”) is established by decision of the rector/faculty dean/institute director under\nauthorization of the President of HUST. The committee consists of 7 members, including a\nchairperson, a secretary, 2 reviewers, and other members. The dissertation defense at the institutional\nlevel must take place no sooner than 21 days and no later than 45 days from the date the committee is\nofficially\n\n[hust-academic-regulations-2025:26:772 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 26]\na) The thesis defense grade is the average grade given by all council members in the defense\nsession. The final grade is rounded to two decimal places, and each member grades on a 10 -point\nscale, allowing increments of 0.5 points.\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:19:714",
+          "hust-academic-regulations-2025:32:531",
+          "hust-academic-regulations-2025:26:772"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations",
+        "proposed_answer": "Nội dung không đủ bằng chứng để xác định số lượng thành viên hội đồng đánh giá luận án tiến sĩ cấp cơ sở cần tán thành để đề xuất đánh giá cấp trường.",
+        "proposed_citations": []
+      }
+    ],
+    "citations": [],
+    "query_top3": [
+      {
+        "chunk_id": "hust-academic-regulations-2025:19:714",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 19,
+        "text": "7. For exceptions, the President of HUST will set up a Committee to assess and reach a final\ndecision.\n",
+        "metadata": {
+          "start": 714,
+          "program_level": "undergraduate"
+        },
+        "score": 0.01639344262295082,
+        "id": "hust-academic-regulations-2025:19:714",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 1
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:32:2510",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 32,
+        "text": "b) The University -level Dissertation Evaluation Committee is established by decision of the\nPresident of HUST and consists of 7 members, including a chairperson, a secretary, 3 reviewers, and\nother members. The dissertation defense must be held within 2 months from the date of establishment\nof the university-level committee. The defense will not be held if the ch airperson, secretary, or 2 or\nmore committee members are absent.\n",
+        "metadata": {
+          "start": 2510
+        },
+        "score": 0.016129032258064516,
+        "id": "hust-academic-regulations-2025:32:2510",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 2
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:32:531",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 32,
+        "text": "b) The Institutional Dissertation Evaluation Committee (hereinafter referred to as the\n“institutional committee”) is established by decision of the rector/faculty dean/institute director under\nauthorization of the President of HUST. The committee consists of 7 members, including a\nchairperson, a secretary, 2 reviewers, and other members. The dissertation defense at the institutional\nlevel must take place no sooner than 21 days and no later than 45 days from the date the committee is\nofficially",
+        "metadata": {
+          "start": 531
+        },
+        "score": 0.015873015873015872,
+        "id": "hust-academic-regulations-2025:32:531",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 3
+        }
+      }
+    ],
+    "ranking_ms": 619.9415000010049,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "agent_ms": 2727.5958999998693,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": false,
+    "chat_usage": [
+      {
+        "prompt_tokens": 314,
+        "completion_tokens": 32,
+        "total_tokens": 346,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 659,
+        "completion_tokens": 44,
+        "total_tokens": 703,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3347.574400002486,
+    "config": "hybrid-budget"
+  },
+  {
+    "query_id": "TU01",
+    "split": "test",
+    "question": "Sinh viên HUST phải nộp bao nhiêu tiền để phúc khảo điểm một học phần?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "HUST appeal fee for exam grade",
+        "filter": null,
+        "results": [
+          {
+            "id": "hust-academic-regulations-2025:10:1161",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 10,
+            "text": "Article 6. Exam postponement, exam exemption, grade reappraisal, and grade appeals\n",
+            "metadata": {
+              "start": 1161
+            },
+            "score": 0.01639344262295082,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "tfidf": 1
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:21:1510",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 21,
+            "text": "1. HUST conducts graduation assessments three times per year—specifically at the end of each\nmain semester and at the end of the summer semester. Students wishing to be considered for\ngraduation must register according to the timeline specified in the Academic Calendar.\n",
+            "metadata": {
+              "start": 1510,
+              "program_level": "engineer"
+            },
+            "score": 0.01639344262295082,
+            "id": "hust-academic-regulations-2025:21:1510",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "id": "hust-academic-regulations-2025:10:800",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 10,
+            "text": "a) Grade I: Course grade is incomplete due to an approved exam deferral.\n",
+            "metadata": {
+              "start": 800
+            },
+            "score": 0.016129032258064516,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "tfidf": 2
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:10:1161 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 10]\nArticle 6. Exam postponement, exam exemption, grade reappraisal, and grade appeals\n\n\n[hust-academic-regulations-2025:21:1510 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 21]\n1. HUST conducts graduation assessments three times per year—specifically at the end of each\nmain semester and at the end of the summer semester. Students wishing to be considered for\ngraduation must register according to the timeline specified in the Academic Calendar.\n\n\n[hust-academic-regulations-2025:10:800 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 10]\na) Grade I: Course grade is incomplete due to an approved exam deferral.\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:10:1161",
+          "hust-academic-regulations-2025:21:1510",
+          "hust-academic-regulations-2025:10:800"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations",
+        "proposed_answer": "Không đủ bằng chứng",
+        "proposed_citations": []
+      }
+    ],
+    "citations": [],
+    "query_top3": [
+      {
+        "id": "hust-academic-regulations-2025:22:2161",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 22,
+        "text": " total\nstudy duration. Special cases will be decided by the President of HUST.\n",
+        "metadata": {
+          "start": 2161,
+          "program_level": "engineer"
+        },
+        "score": 0.03278688524590164,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 1,
+          "tfidf": 1
+        }
+      },
+      {
+        "id": "hust-academic-regulations-2025:17:1437",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 17,
+        "text": "b) The student has been put on probation or higher status during their study time at HUST.\n",
+        "metadata": {
+          "start": 1437,
+          "program_level": "undergraduate"
+        },
+        "score": 0.03125,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 4,
+          "tfidf": 4
+        }
+      },
+      {
+        "id": "hust-academic-regulations-2025:19:365",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 19,
+        "text": "6. Students from other institutions wishing to transfer to HUST must meet the admission criteria\nof the equivalent program in the same intake year and must receive approval from both the President\nof HUST and the Head of their current institution. The total study duration is calculated from the date\nof initial enrollment at the first institution.\n",
+        "metadata": {
+          "start": 365,
+          "program_level": "undergraduate"
+        },
+        "score": 0.029857397504456328,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 8,
+          "tfidf": 6
+        }
+      }
+    ],
+    "ranking_ms": 428.15970000083325,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "agent_ms": 2044.4664999995439,
+    "chat_usage": [
+      {
+        "prompt_tokens": 301,
+        "completion_tokens": 11,
+        "total_tokens": 312,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 534,
+        "completion_tokens": 12,
+        "total_tokens": 546,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 2472.6305000003777,
+    "config": "hybrid-budget"
+  },
+  {
+    "query_id": "TU02",
+    "split": "test",
+    "question": "Sinh viên hệ kỹ sư xin nghỉ học tạm thời vì điều trị ở nước ngoài có phải nộp bản dịch tiếng Việt có công chứng của giấy chứng nhận y tế không?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "Sinh viên hệ kỹ sư nghỉ học tạm thời giấy chứng nhận y tế công chứng",
+        "filter": null,
+        "results": [
+          {
+            "chunk_id": "hust-academic-regulations-2025:22:1663",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 22,
+            "text": "2. Students who are ill, have accidents with long -term treatment, or are on maternity leave in\naccordance with regulations are allowed to take temporary leave. The period of leave (as specified in\nthe medical certificate issued by a competent healthcare fa cility in accordance with the Ministry of\nHealth’s regulations) will not be counted toward the total study duration if it does not exceed two main\nsemesters in total; temporary leave s last more than two semesters will be counted toward the",
+            "metadata": {
+              "start": 1663,
+              "program_level": "engineer"
+            },
+            "score": 0.01639344262295082,
+            "id": "hust-academic-regulations-2025:22:1663",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:27:279",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 27,
+            "text": "c) The final version of the thesis has been submitted to the Ta Quang Buu Library in accordance\nwith HUST’s formatting requirements, within 20 days from the date of a successful defense.\n",
+            "metadata": {
+              "start": 279,
+              "program_level": "masters"
+            },
+            "score": 0.016129032258064516,
+            "id": "hust-academic-regulations-2025:27:279",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 2
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:17:1803",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 17,
+            "text": "a) A student may take temporary leave if granted permission through a decision issued by the\nPresident of HUST.\n",
+            "metadata": {
+              "start": 1803,
+              "program_level": "undergraduate"
+            },
+            "score": 0.015873015873015872,
+            "id": "hust-academic-regulations-2025:17:1803",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 3
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:22:1663 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 22]\n2. Students who are ill, have accidents with long -term treatment, or are on maternity leave in\naccordance with regulations are allowed to take temporary leave. The period of leave (as specified in\nthe medical certificate issued by a competent healthcare fa cility in accordance with the Ministry of\nHealth’s regulations) will not be counted toward the total study duration if it does not exceed two main\nsemesters in total; temporary leave s last more than two semesters will be counted toward the\n\n[hust-academic-regulations-2025:27:279 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 27]\nc) The final version of the thesis has been submitted to the Ta Quang Buu Library in accordance\nwith HUST’s formatting requirements, within 20 days from the date of a successful defense.\n\n\n[hust-academic-regulations-2025:17:1803 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 17]\na) A student may take temporary leave if granted permission through a decision issued by the\nPresident of HUST.\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:22:1663",
+          "hust-academic-regulations-2025:27:279",
+          "hust-academic-regulations-2025:17:1803"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations",
+        "proposed_answer": "Nội dung không đủ bằng chứng để xác nhận yêu cầu nộp bản dịch tiếng Việt có công chứng của giấy chứng nhận y tế khi sinh viên hệ kỹ sư xin nghỉ học tạm thời. Quy định chỉ đề cập đến việc sinh viên được phép nghỉ học tạm thời khi có giấy chứng nhận y tế từ cơ sở y tế có thẩm quyền.",
+        "proposed_citations": []
+      }
+    ],
+    "citations": [],
+    "query_top3": [
+      {
+        "chunk_id": "hust-academic-regulations-2025:26:4",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 26,
+        "text": "2. Met the foreign language proficiency requirement, equivalent to level 4/6 of the Vietnamese\n6-level Foreign Language Proficiency Framework, or other equivalent certificates as regulated by the\nMinistry of Education and Training; or holds a university degre e (or higher) in a foreign language\nmajor, or in another major where the program was entirely delivered in a foreign language. The entry\nand graduation language requirements must be of the same language.\n",
+        "metadata": {
+          "start": 4,
+          "program_level": "masters"
+        },
+        "score": 0.01639344262295082,
+        "id": "hust-academic-regulations-2025:26:4",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 1
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:22:1663",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 22,
+        "text": "2. Students who are ill, have accidents with long -term treatment, or are on maternity leave in\naccordance with regulations are allowed to take temporary leave. The period of leave (as specified in\nthe medical certificate issued by a competent healthcare fa cility in accordance with the Ministry of\nHealth’s regulations) will not be counted toward the total study duration if it does not exceed two main\nsemesters in total; temporary leave s last more than two semesters will be counted toward the",
+        "metadata": {
+          "start": 1663,
+          "program_level": "engineer"
+        },
+        "score": 0.016129032258064516,
+        "id": "hust-academic-regulations-2025:22:1663",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 2
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:27:1668",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 27,
+        "text": "2. Students who are ill, involved in long -term medical treatment, or on maternity leave (as per\nregulations) are allowed to take temporary leave. . The period of leave (as specified in the medical\ncertificate issued by a competent healthcare facility in accordance with the Ministry of Health’s\nregulations) will not be counted toward the total study duration if it does not exceed two main\nsemesters in total. Any leave beyond two semesters will be counted towards the total study duration.\n",
+        "metadata": {
+          "start": 1668,
+          "program_level": "masters"
+        },
+        "score": 0.015873015873015872,
+        "id": "hust-academic-regulations-2025:27:1668",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 3
+        }
+      }
+    ],
+    "ranking_ms": 400.32540000174777,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "agent_ms": 3332.8630999967572,
+    "chat_usage": [
+      {
+        "prompt_tokens": 318,
+        "completion_tokens": 22,
+        "total_tokens": 340,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 635,
+        "completion_tokens": 82,
+        "total_tokens": 717,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3733.1930000000284,
+    "config": "hybrid-budget"
+  }
+]

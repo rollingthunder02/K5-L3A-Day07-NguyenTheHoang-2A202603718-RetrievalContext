@@ -1,0 +1,34 @@
+[
+  {
+    "id": "TU01",
+    "split": "test",
+    "question": "Sinh viên HUST phải nộp bao nhiêu tiền để phúc khảo điểm một học phần?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Đã đối chiếu Điều 6 (trang PDF 10) về thời hạn và phạm vi phúc khảo, và Điều 9 (trang PDF 11–12) về học phí. Tra các từ khóa reappraisal, appeal và fee trong PDF không tìm thấy mức phí phúc khảo."
+  },
+  {
+    "id": "TU02",
+    "split": "test",
+    "question": "Sinh viên hệ kỹ sư xin nghỉ học tạm thời vì điều trị ở nước ngoài có phải nộp bản dịch tiếng Việt có công chứng của giấy chứng nhận y tế không?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Đã đối chiếu Điều 25 (trang PDF 22–23) về nghỉ học tạm thời và giấy chứng nhận y tế. Tra các từ khóa medical certificate, translation và notarization trong PDF không tìm thấy yêu cầu dịch thuật hoặc công chứng đối với giấy do cơ sở y tế nước ngoài cấp."
+  },
+  {
+    "id": "DU01",
+    "split": "dev",
+    "question": "Sinh viên vắng thi giữa kỳ vì ốm phải gửi đề nghị thi bù cho giảng viên trong vòng bao nhiêu ngày?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Điều 6 khoản 2 (trang PDF 10) cho phép giảng viên bố trí thi bù hoặc đánh giá thay thế. Đối chiếu các mục có từ khóa midterm và make-up cho thấy tài liệu không nêu thời hạn gửi đề nghị thi bù giữa kỳ."
+  },
+  {
+    "id": "DU02",
+    "split": "dev",
+    "question": "HUST xử lý hồ sơ xin chuyển sang cơ sở đào tạo khác của sinh viên đại học trong tối đa bao nhiêu ngày làm việc kể từ khi nhận đủ hồ sơ?",
+    "answerable": false,
+    "expected_behavior": "search_and_abstain",
+    "absence_reason": "Điều 8 khoản 1 (trang PDF 11) nêu đối tượng đủ điều kiện và yêu cầu phê duyệt. Đã tra các cụm transfer to another educational institution, processing time và working days trong PDF, không thấy thời hạn xử lý hồ sơ này."
+  }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Từ 50% đến 80%, theo đề cương học phần."
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Không. Ngưỡng tối thiểu 12 tín chỉ không áp dụng cho sinh viên năm cuối."
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 2,
+    "citation_support": [
+      false,
+      true
+    ],
+    "reason": "Trang 23 thuộc hệ kỹ sư; trang 18 hỗ trợ đúng câu hỏi về đại học."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q18",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q19",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q20",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "DU01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Đã tra cứu rồi từ chối; quy chế không nêu thời hạn được hỏi."
+  },
+  {
+    "query_id": "DU02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Đã tra cứu rồi từ chối; quy chế không nêu thời hạn được hỏi."
+  }
+]

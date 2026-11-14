@@ -1,0 +1,53 @@
+[
+  {
+    "query_id": "T01",
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Trang 10 đoạn 10:472 quy định giữ điểm cao nhất, tức điểm cũ trong tình huống hỏi."
+  },
+  {
+    "query_id": "T02",
+    "context_grade": 0,
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Context nói thời gian tối đa hoàn thành chương trình, thiếu quy định thi bù và điểm F ở trang 10."
+  },
+  {
+    "query_id": "T03",
+    "context_grade": 0,
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Context nói nghỉ học do nghĩa vụ, thiếu hạn 7 ngày và ngoại lệ phúc khảo ở trang 10."
+  },
+  {
+    "query_id": "T06",
+    "context_grade": 0,
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Context đề cập luận văn thạc sĩ, thiếu ngưỡng 5,5/10 của chuyên đề tiến sĩ ở trang 30."
+  },
+  {
+    "query_id": "T07",
+    "context_grade": 0,
+    "answer_grade": 0,
+    "citation_support": [
+      false
+    ],
+    "reason": "Dẫn trang 33 về hai phiếu phản đối ở cấp trường. Câu hỏi cần ít nhất 6/7 phiếu thuận ở cấp cơ sở theo trang 32."
+  },
+  {
+    "query_id": "TU01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Agent tra cứu rồi từ chối. Điều 6 và Điều 9 không nêu mức phí phúc khảo."
+  },
+  {
+    "query_id": "TU02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Agent tra cứu rồi từ chối. Điều 25 nêu giấy chứng nhận y tế, chưa có yêu cầu về dịch thuật và công chứng giấy nước ngoài."
+  }
+]

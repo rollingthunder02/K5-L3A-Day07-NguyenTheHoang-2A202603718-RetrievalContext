@@ -1,0 +1,51 @@
+[
+  {
+    "query_id": "T01",
+    "context_grade": 0,
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Context có điều kiện CPA để tốt nghiệp, thiếu quy định lấy điểm cao hơn khi học lại ở trang 10."
+  },
+  {
+    "query_id": "T02",
+    "context_grade": 0,
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Context có giới hạn thời gian học và chuyển tín chỉ, thiếu hạn thi bù và điểm F ở trang 10."
+  },
+  {
+    "query_id": "T03",
+    "context_grade": 0,
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Context nói thời gian học và chuyển hình thức đào tạo, thiếu thời hạn và ngoại lệ phúc khảo ở trang 10."
+  },
+  {
+    "query_id": "T06",
+    "context_grade": 2,
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Trang 30 đoạn 30:2062 đủ bằng chứng cho ngưỡng ít nhất 5,5 trên thang 10; câu trả lời khớp."
+  },
+  {
+    "query_id": "T07",
+    "context_grade": 1,
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Trang 32 đoạn 32:531 nêu hội đồng cấp cơ sở có 7 thành viên nhưng thiếu ngưỡng 6 phiếu thuận; agent từ chối."
+  },
+  {
+    "query_id": "TU01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Agent tra cứu rồi từ chối. Điều 6 và Điều 9 không nêu mức phí phúc khảo."
+  },
+  {
+    "query_id": "TU02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Agent tra cứu rồi từ chối. Điều 25 nêu giấy chứng nhận y tế, chưa có yêu cầu về dịch thuật và công chứng giấy nước ngoài."
+  }
+]

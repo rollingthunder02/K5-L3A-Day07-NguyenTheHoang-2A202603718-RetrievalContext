@@ -1,0 +1,146 @@
+[
+  {
+    "query_id": "q01",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Hai học kỳ chính và một học kỳ hè."
+  },
+  {
+    "query_id": "q02",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q03",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q04",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Có. Sinh viên phải đăng ký và hoàn thành A, nhưng không bắt buộc đạt A."
+  },
+  {
+    "query_id": "q05",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q06",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: 0 điểm."
+  },
+  {
+    "query_id": "q07",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Dùng số tín chỉ của từng học phần làm trọng số và làm tròn GPA đến hai chữ số thập phân."
+  },
+  {
+    "query_id": "q08",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q09",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: 50%."
+  },
+  {
+    "query_id": "q10",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q11",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q12",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q13",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Học kỳ chính kế tiếp."
+  },
+  {
+    "query_id": "q14",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q15",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Từ đầu học kỳ tiếp theo."
+  },
+  {
+    "query_id": "q17",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q18",
+    "answer_grade": 0,
+    "citation_support": [],
+    "reason": "Agent từ chối câu có đáp án trong tài liệu."
+  },
+  {
+    "query_id": "q19",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Tối đa 24 tín chỉ mỗi học kỳ chính thông thường và 45 tín chỉ mỗi năm học."
+  },
+  {
+    "query_id": "q20",
+    "answer_grade": 2,
+    "citation_support": [
+      true
+    ],
+    "reason": "Câu trả lời và đoạn trích hỗ trợ đáp án: Trước khi học các học phần thuộc chương trình thạc sĩ chuẩn."
+  },
+  {
+    "query_id": "DU01",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Đã tra cứu rồi từ chối; quy chế không nêu thời hạn được hỏi."
+  },
+  {
+    "query_id": "DU02",
+    "abstention_correct": true,
+    "citation_support": [],
+    "reason": "Đã tra cứu rồi từ chối; quy chế không nêu thời hạn được hỏi."
+  }
+]

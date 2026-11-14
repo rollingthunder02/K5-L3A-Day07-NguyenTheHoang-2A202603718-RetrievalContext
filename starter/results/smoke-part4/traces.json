@@ -1,0 +1,350 @@
+[
+  {
+    "query_id": "q01",
+    "split": "dev",
+    "question": "Một năm học tại HUST gồm những học kỳ nào?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "academic year semesters HUST",
+        "filter": null,
+        "results": [
+          {
+            "id": "hust-academic-regulations-2025:7:475",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 7,
+            "text": "1. HUST conducts its academic activities on an academic year and semester basis. An academic\nyear consists of two main semesters and one summer semester. The summer semester is organized\nbased on learners' needs and the availability of instructors from the univer sity/faculty/institute in\ncharge.\n",
+            "metadata": {
+              "start": 475
+            },
+            "score": 0.03278688524590164,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1,
+              "tfidf": 1
+            }
+          },
+          {
+            "id": "hust-academic-regulations-2025:36:1257",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 36,
+            "text": "1. These Regulations comes into force from the first semester of the 2025–2026 academic year\nand will replace the academic regulations issued under Decision No. 4600/QĐ-ĐHBK dated June 9,\n2023, by the President of HUST.\n",
+            "metadata": {
+              "start": 1257
+            },
+            "score": 0.029418126757516764,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 9,
+              "tfidf": 7
+            }
+          },
+          {
+            "id": "hust-academic-regulations-2025:20:1027",
+            "source_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 20,
+            "text": "e) Academic probation is not applicable for summer semesters.\n",
+            "metadata": {
+              "start": 1027,
+              "program_level": "undergraduate"
+            },
+            "score": 0.016129032258064516,
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "tfidf": 2
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:7:475 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 7]\n1. HUST conducts its academic activities on an academic year and semester basis. An academic\nyear consists of two main semesters and one summer semester. The summer semester is organized\nbased on learners' needs and the availability of instructors from the univer sity/faculty/institute in\ncharge.\n\n\n[hust-academic-regulations-2025:36:1257 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 36]\n1. These Regulations comes into force from the first semester of the 2025–2026 academic year\nand will replace the academic regulations issued under Decision No. 4600/QĐ-ĐHBK dated June 9,\n2023, by the President of HUST.\n\n\n[hust-academic-regulations-2025:20:1027 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 20]\ne) Academic probation is not applicable for summer semesters.\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:7:475",
+          "hust-academic-regulations-2025:36:1257",
+          "hust-academic-regulations-2025:20:1027"
+        ]
+      },
+      {
+        "event": "answer"
+      }
+    ],
+    "citations": [
+      "hust-academic-regulations-2025:7:475"
+    ],
+    "query_top3": [
+      {
+        "id": "hust-academic-regulations-2025:22:2161",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 22,
+        "text": " total\nstudy duration. Special cases will be decided by the President of HUST.\n",
+        "metadata": {
+          "start": 2161,
+          "program_level": "engineer"
+        },
+        "score": 0.03131881575727918,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 7,
+          "tfidf": 1
+        }
+      },
+      {
+        "id": "hust-academic-regulations-2025:19:365",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 19,
+        "text": "6. Students from other institutions wishing to transfer to HUST must meet the admission criteria\nof the equivalent program in the same intake year and must receive approval from both the President\nof HUST and the Head of their current institution. The total study duration is calculated from the date\nof initial enrollment at the first institution.\n",
+        "metadata": {
+          "start": 365,
+          "program_level": "undergraduate"
+        },
+        "score": 0.03128054740957967,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 2,
+          "tfidf": 6
+        }
+      },
+      {
+        "id": "hust-academic-regulations-2025:7:3",
+        "source_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 7,
+        "text": "Education and Training (MOET) and Hanoi University of Science and Technology (HUST)’s program\nstandards.\n",
+        "metadata": {
+          "start": 3
+        },
+        "score": 0.03076923076923077,
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 5,
+          "tfidf": 5
+        }
+      }
+    ],
+    "ranking_ms": 460.6517000011081,
+    "status": "answered",
+    "answer": "Một năm học tại HUST gồm hai học kỳ chính và một học kỳ mùa hè. Học kỳ mùa hè được tổ chức dựa trên nhu cầu của sinh viên và sự sẵn có của giảng viên từ trường đại học/khoa/viện phụ trách. [hust-academic-regulations-2025:7:475]",
+    "agent_ms": 3188.229000001229,
+    "hit1": false,
+    "hit3": false,
+    "context_hit": true,
+    "chat_usage": [
+      {
+        "prompt_tokens": 292,
+        "completion_tokens": 9,
+        "total_tokens": 301,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 564,
+        "completion_tokens": 76,
+        "total_tokens": 640,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3649.0035000006174,
+    "config": "hybrid-budget"
+  },
+  {
+    "query_id": "DU01",
+    "split": "dev",
+    "question": "Sinh viên vắng thi giữa kỳ vì ốm phải gửi đề nghị thi bù cho giảng viên trong vòng bao nhiêu ngày?",
+    "model": "gpt-4o-mini",
+    "top_k": 3,
+    "budget_chars": 2000,
+    "max_searches": 1,
+    "events": [
+      {
+        "event": "search",
+        "query": "vắng thi giữa kỳ vì ốm gửi đề nghị thi bù trong bao nhiêu ngày",
+        "filter": null,
+        "results": [
+          {
+            "chunk_id": "hust-academic-regulations-2025:27:279",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 27,
+            "text": "c) The final version of the thesis has been submitted to the Ta Quang Buu Library in accordance\nwith HUST’s formatting requirements, within 20 days from the date of a successful defense.\n",
+            "metadata": {
+              "start": 279,
+              "program_level": "masters"
+            },
+            "score": 0.01639344262295082,
+            "id": "hust-academic-regulations-2025:27:279",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 1
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:18:118",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 18,
+            "text": "đ) Students must submit a request to return to study no later than one week before the start of\nthe new semester. For those who were mobilized into the armed forces or assigned international duties,\na certificate of mission completion must be submitted together with the request.\n",
+            "metadata": {
+              "start": 118,
+              "program_level": "undergraduate"
+            },
+            "score": 0.016129032258064516,
+            "id": "hust-academic-regulations-2025:18:118",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 2
+            }
+          },
+          {
+            "chunk_id": "hust-academic-regulations-2025:32:0",
+            "document_id": "hust-academic-regulations-2025",
+            "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+            "page": 32,
+            "text": "28\n\n",
+            "metadata": {
+              "start": 0
+            },
+            "score": 0.015873015873015872,
+            "id": "hust-academic-regulations-2025:32:0",
+            "source_id": "hust-academic-regulations-2025",
+            "strategy": "hybrid",
+            "branch_ranks": {
+              "dense": 3
+            }
+          }
+        ],
+        "context": "[hust-academic-regulations-2025:27:279 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 27]\nc) The final version of the thesis has been submitted to the Ta Quang Buu Library in accordance\nwith HUST’s formatting requirements, within 20 days from the date of a successful defense.\n\n\n[hust-academic-regulations-2025:18:118 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 18]\nđ) Students must submit a request to return to study no later than one week before the start of\nthe new semester. For those who were mobilized into the armed forces or assigned international duties,\na certificate of mission completion must be submitted together with the request.\n\n\n[hust-academic-regulations-2025:32:0 | starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf | page 32]\n28\n\n",
+        "context_ids": [
+          "hust-academic-regulations-2025:27:279",
+          "hust-academic-regulations-2025:18:118",
+          "hust-academic-regulations-2025:32:0"
+        ]
+      },
+      {
+        "event": "invalid_or_missing_citations",
+        "proposed_answer": "Không đủ bằng chứng",
+        "proposed_citations": []
+      }
+    ],
+    "citations": [],
+    "query_top3": [
+      {
+        "chunk_id": "hust-academic-regulations-2025:27:279",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 27,
+        "text": "c) The final version of the thesis has been submitted to the Ta Quang Buu Library in accordance\nwith HUST’s formatting requirements, within 20 days from the date of a successful defense.\n",
+        "metadata": {
+          "start": 279,
+          "program_level": "masters"
+        },
+        "score": 0.01639344262295082,
+        "id": "hust-academic-regulations-2025:27:279",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 1
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:18:118",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 18,
+        "text": "đ) Students must submit a request to return to study no later than one week before the start of\nthe new semester. For those who were mobilized into the armed forces or assigned international duties,\na certificate of mission completion must be submitted together with the request.\n",
+        "metadata": {
+          "start": 118,
+          "program_level": "undergraduate"
+        },
+        "score": 0.016129032258064516,
+        "id": "hust-academic-regulations-2025:18:118",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 2
+        }
+      },
+      {
+        "chunk_id": "hust-academic-regulations-2025:23:284",
+        "document_id": "hust-academic-regulations-2025",
+        "source": "starter/data/corpus/HUST's ACADEMIC REGULATIONS-2025.pdf",
+        "page": 23,
+        "text": "5. If a student requests temporary leave during the final exam period according to the Academic\nCalendar, the leave will take effect from the start of the next semester. The student may request to\npostpone exams for any unfinished courses.\n",
+        "metadata": {
+          "start": 284,
+          "program_level": "engineer"
+        },
+        "score": 0.015873015873015872,
+        "id": "hust-academic-regulations-2025:23:284",
+        "source_id": "hust-academic-regulations-2025",
+        "strategy": "hybrid",
+        "branch_ranks": {
+          "dense": 3
+        }
+      }
+    ],
+    "ranking_ms": 441.8076000001747,
+    "status": "abstain",
+    "answer": "Không đủ bằng chứng để trả lời.",
+    "agent_ms": 2811.712599999737,
+    "chat_usage": [
+      {
+        "prompt_tokens": 309,
+        "completion_tokens": 24,
+        "total_tokens": 333,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      {
+        "prompt_tokens": 559,
+        "completion_tokens": 12,
+        "total_tokens": 571,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "audio_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0,
+          "audio_tokens": 0,
+          "accepted_prediction_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      }
+    ],
+    "elapsed_ms": 3253.5287000009703,
+    "config": "hybrid-budget"
+  }
+]

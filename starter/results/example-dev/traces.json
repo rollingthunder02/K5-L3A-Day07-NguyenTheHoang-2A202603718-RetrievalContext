@@ -1,0 +1,41 @@
+[
+  {
+    "query_id": "q1",
+    "split": "dev",
+    "question": "Hoàn tiền mất bao lâu?",
+    "strategy": "tfidf",
+    "top_k": 3,
+    "budget_chars": 800,
+    "gold": [
+      {
+        "source_id": "policy-1",
+        "page": 1,
+        "evidence": "xử lý trong 7 ngày làm việc"
+      }
+    ],
+    "results": [
+      {
+        "id": "policy-1:p1:c1",
+        "text": "Yêu cầu hoàn tiền được xử lý trong 7 ngày làm việc.",
+        "source_id": "policy-1",
+        "source": "example://policy-1",
+        "page": 1,
+        "metadata": {
+          "version": "2025"
+        },
+        "score": 0.408248290463863,
+        "strategy": "tfidf",
+        "hit": true
+      }
+    ],
+    "context": "[policy-1:p1:c1 | example://policy-1 | page 1]\nYêu cầu hoàn tiền được xử lý trong 7 ngày làm việc.",
+    "context_ids": [
+      "policy-1:p1:c1"
+    ],
+    "context_chars": 98,
+    "elapsed_ms": 0.028599999495781958,
+    "hit1": true,
+    "hit3": true,
+    "context_hit": true
+  }
+]
